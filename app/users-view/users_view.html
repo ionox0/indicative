@@ -2,8 +2,8 @@
 
 <input ng-model="filterText" />
 
-<table>
-  <th>
+<table class="users-view-table">
+  <thead>
     <tr>
       <td>FIRST NAME</td>
       <td>LAST NAME</td>
@@ -13,7 +13,7 @@
       <td>EMAIL</td>
       <td>ID</td>
     </tr>
-  </th>
+  </thead>
   <tbody>
     <tr ng-repeat="user in users | filter:firstNameFilter">
       <td>{{ user.first_name }}</td>
